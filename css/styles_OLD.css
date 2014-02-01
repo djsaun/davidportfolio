@@ -1,0 +1,79 @@
+html, body, header, section, nav, nav ul {
+		max-width: 2000px;
+}
+
+html {
+	position: absolute;
+}
+
+body, section, nav, .nav, ul, li {
+	position: relative;
+}
+
+header {
+	border: 1px solid black;
+}
+
+nav {
+	padding: 0 34% 0 34%;
+}
+
+.navabout, .navwork, .navcontact, .navblog {
+	display: block;
+	float: left;
+	width: auto;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+
+.davidpic {
+	float: left;
+	margin: 10px;
+}
+
+#work {
+	padding: 0 15% 0 15%;
+}
+.thumbnail {
+	display: inline-block;
+	width: 200px;	
+	height: 200px;
+	float: left;
+	border: 5px solid #000;
+	margin: 10px;
+	padding: 20px;
+}
+h1 {
+	padding: 0 20px;
+}
+
+li {
+	list-style-type: none;
+}
+
+.about {
+	float: left;
+	clear: right;
+}
+
+h3 {
+	font-variant: small-caps;
+	text-align: center;	
+}
+
+/* For modern browsers */
+.container:before,
+.container:after {
+    content:"";
+    display:table;
+}
+.container:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.container {
+    zoom:1;
+}
+

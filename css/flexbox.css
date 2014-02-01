@@ -1,0 +1,26 @@
+.nav, .logos, .samples, form{ 
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-flex-wrap: wrap;
+	}
+
+#about {
+	-webkit-column-count: 2;
+	-webkit-column-gap: 1em;
+}
+
+.thumbnails {
+	-webkit-column-count: 1;
+	-webkit-column-gap: 1em;
+	-webkit-column-width: 45%;
+}
+
+h3, .skills {
+	-webkit-column-span: all;
+}
+
+
+
+
+
+
