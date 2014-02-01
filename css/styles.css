@@ -86,10 +86,10 @@ li a {
 /* Navigation */
 
 .nav a {
-	margin: 1%;
-	padding: 1.75%;
+	margin: 2em;
+	padding: 1em;
 	border: 3px solid black;
-	border-radius: 25px;
+	border-radius: 30%;
 	color: #FFEBCD;
 	text-decoration: none;
 }
