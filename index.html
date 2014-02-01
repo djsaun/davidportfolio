@@ -77,15 +77,15 @@
 						<li><a href="https://plus.google.com/+DavidSaunders010100011" class="icon google" target="_blank" title="Google +"></a></li>
 						<li><a  href="http://open.spotify.com/user/djsaun" class="icon spotify" target="_blank" title="Spotify"></a></li>
 				</ul>
-				<form action="#" method="POST" name="contact_form">
+				<form action="#" method="POST" name="contact_form" id="contactform">
 					<fieldset>
 						<div class="name">
-							<label for="Name">Name</label>
-							<input type="text" name="Name" id="Name"></input>
+							<label for="Name">Name *</label>
+							<input type="text" name="Name" id="Name" pattern="[a-zA-Z ]+" required></input>
 						</div>
 						<div class="email">
-							<label for="Email">Email</label>
-							<input type="email" Name="Email" id="Email"></input>
+							<label for="Email">Email *</label>
+							<input type="email" Name="Email" id="Email" required></input>
 						</div>
 						<div class="message">
 							<label for="Message">Message</label>
@@ -104,6 +104,8 @@
 		</footer>
 
 		</article>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>		
+<script src="js/contact.js"></script>
 
 </body>
 </html>
