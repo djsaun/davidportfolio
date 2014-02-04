@@ -2,10 +2,9 @@ $(document).ready(function() {
 	(function time() {
 		var d = new Date();
 		var n = d.getHours();
-		console.log(n);
-		if (n > 18) { 	
+		if (n > 18 && n <= 4) { 	
 			$('.head').addClass('evening');
-		 } else if (n < 12) {
+		 } else if (n > 4 && n < 12) {
 			$('.head').addClass('morning');
 		 } else {
 			$('.head').addClass('afternoon');
