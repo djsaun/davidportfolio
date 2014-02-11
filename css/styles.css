@@ -114,8 +114,18 @@ li a {
 	text-align: center;
 }
 
-#about p {
+#about p:nth-child(n+4) {
 	text-align: justify;
+}
+
+#about p:nth-child(2) {
+	margin-top: -1%;
+	font-size: 1.4em;
+}
+
+#about p:nth-child(3) {
+	margin-top: -1%;
+	font-size: 1.2em;
 }
 
 .skills {
@@ -126,7 +136,7 @@ li a {
 /* Work */
 
 #work {
-	margin-top: -5%;
+	margin-top: 4em;
 }
 
 .thumbnail {
@@ -226,7 +236,25 @@ textarea[name*="Message"] {
 
 /* Media Queries */
 
-@media screen and (max-width: 629px) {
+@media screen and (max-width: 1035px) {
+	#work {
+		margin-top: 10%;
+	}
+}
+
+@media screen and (max-width: 1006px) {
+	#work {
+		margin-top: 10%;
+	}
+}
+
+@media screen and (max-width: 848px) {
+	#work {
+		margin-top: 20%;
+	}
+}
+
+@media screen and (max-width: 693px) {
 	h1:last-child {
 		display: none;
 	}
@@ -244,7 +272,7 @@ textarea[name*="Message"] {
 		margin-top: -1%;
 	}
 	#work {
-		margin-top: -40%;
+		margin-top: -5%;
 	}
 	.skills {
 		display: none;
@@ -258,11 +286,17 @@ textarea[name*="Message"] {
 	h1 {
 		font-size: 1.75em;
 	}
+#about {
+	margin-bottom: 10%;
+	}
 }
 
 @media screen and (max-width: 525px) {
 	h1 {
 		font-size: 1.25em;
+	}
+#about {
+	margin-bottom: 20%;
 	}
 }
 
@@ -270,5 +304,28 @@ textarea[name*="Message"] {
 h1, .nav a {
 		font-size: 1em;
 	}
+#about {
+	margin-bottom: 38%;
+	}
 }
 
+@media screen and (max-width: 374px) {
+
+#work {
+	margin-top: 6em;
+	}
+}
+
+@media screen and (max-width: 364px) {
+
+#work {
+	margin-top: 50%;
+	}
+}
+
+@media screen and (max-width: 346px) {
+
+#work {
+	margin-top: 70%;
+	}
+}

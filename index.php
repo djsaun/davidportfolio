@@ -25,7 +25,7 @@
 	<div class="head">
 		<header>
 			<h1 class="headtext">Hello, I'm David Saunders.</h1>
-			<!-- <h1>I'm a ___</h1> -->
+			<h1>I'm a ___</h1>
 		</header>
 		<section>
 			<nav class="container">
@@ -41,10 +41,15 @@
 		<article>
 				<div id="about">
 					<h3>About</h3>
+						<p class="firstp">My name is David Saunders.</p> 
+						<p class="secondp">I'm a web developer currently living in Austin, Texas.</p>
 						<div class="image">
 							<img src="img/davidsaunders.png" alt="David Saunders" width="200" height="200" class="davidpic container">
 						</div>
-						<p>David Saunders is a web developer living in Austin, Texas, specializing in HTML5, CSS3, JavaScript/jQuery, and PHP. He currently works full-time as a technology project manager for Six Red Marbles, an educational publishing company. In his spare time, he designs and develops web sites, hikes, bikes, plays guitar, and does other fun things.</p>
+						<p> My portfolio is currently a work in progress.</p>
+						<p> I'm originally from Los Angeles, California, but moved to Austin, Texas in October 2012 after a brief stint in Portland, Oregon. I graduated from UC Davis with a degree in physical anthropology, but opted to work in the web development field instead. I enjoy developing websites in HTML5, CSS3, JavaScript/jQuery, and PHP. In my spare time, I'm working on countless projects to better myself at these and other languages.</p>
+						<p> I currently work full-time as a technology project manager at Six Red Marbles, an educational publishing company. In my spare time, I enjoy biking, hiking, frisbee, playing guitar, and other fun things.</p> 
+						<!-- <p>David Saunders is a web developer living in Austin, Texas, specializing in HTML5, CSS3, JavaScript/jQuery, and PHP. He currently works full-time as a technology project manager for Six Red Marbles, an educational publishing company. In his spare time, he hikes, bikes, plays guitar, and does other fun things.</p> -->
 <!-- 						<div class="skills">
 							<ul>
 								<li>&#60;HTML&#62;</li>
