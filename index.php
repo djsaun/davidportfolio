@@ -1,3 +1,21 @@
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	$name = $_POST["name"];
+	$email = $_POST["email"];
+	$message = $_POST["message"];
+	$email_body = "";
+	$email_body = $email_body . "Name: " . $name . "\n";
+	$email_body = $email_body . "Email: " . $email . "\n";
+	$email_body = $email_body . "Message: " . $message;
+	// echo $email_body;
+
+	// TODO: Send Email
+
+	header("Location: index.php?status=thanks"); //redirects to page after email is sent
+	exit; //immediately stops anymore php code in browser from running
+}
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -81,28 +99,32 @@
 						<li><a href="https://www.codepen.io/djsaun" class="icon codepen" target="_blank" title="Codepen" width="54px" height="54px"></a></li>
 						<li><a href="https://www.facebook.com/dsaunders1000010101010101" class="icon facebook" target="_blank" title="Facebook" width="54px" height="54px"></a></li>
 						<li><a href="http://www.linkedin.com/profile/view?id=95648542" class="icon linkedin" target="_blank" title="LinkedIn" width="54px" height="54px"></a></li>
-<!-- 						<li><a href="https://plus.google.com/+DavidSaunders010100011" class="icon google" target="_blank" title="Google +" width="54px" height="54px"></a></li> -->
+<!-- 					<li><a href="https://plus.google.com/+DavidSaunders010100011" class="icon google" target="_blank" title="Google +" width="54px" height="54px"></a></li> -->
 						<li><a  href="http://open.spotify.com/user/djsaun" class="icon spotify" target="_blank" title="Spotify" width="54px" height="54px"></a></li>
 				</ul>
+				<?php if(isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?> 
+				<p class="thanks">Thanks for the email! <br/><br/>I&rsquo;ll be in touch shortly.</p>
+				<?php } else { ?>
 				<form action="#" method="POST" name="contact_form" id="contactform">
 					<fieldset>
 						<div class="name">
 							<label for="Name">Name *</label>
-							<input type="text" name="Name" id="Name" pattern="[a-zA-Z ]+" required></input>
+							<input type="text" name="name" id="name" pattern="[a-zA-Z ]+" required></input>
 						</div>
 						<div class="email">
 							<label for="Email">Email *</label>
-							<input type="email" Name="Email" id="Email" required></input>
+							<input type="email" Name="email" id="email" required></input>
 						</div>
 						<div class="message">
 							<label for="Message">Message</label>
-							<textarea name="Message" id="Message" rows="4" cols="50"></textarea>
+							<textarea name="message" id="message" rows="4" cols="50"></textarea>
 						</div>
 						<div class="submitbtn">
 							<input type="submit" value="Submit">
 						</div>
 					</fieldset>
 				</form>
+				<?php } ?>
 			</div>
 		</article>
 		<footer class="footer">

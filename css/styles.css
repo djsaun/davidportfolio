@@ -8,6 +8,7 @@ html {
 
 body {
 	max-width: 100%;
+	background: #FEFBFD;
 }
 
 /* Global */
@@ -206,16 +207,24 @@ label {
 	margin-bottom: 2%;
 }
 
-input[name*="Name"], input[name*="Email"] {
+/*input[name*="Name"], input[name*="Email"] {
 	margin-bottom: 5%;
 }
 
 textarea[name*="Message"] {
 	margin-bottom: 5%;
-}
+}*/
 
 .submitbtn {
 	text-align: center;
+}
+
+.email, .name, .message {
+	margin-bottom: 5%;
+}
+
+.thanks {
+	font-size: 1.3em;
 }
 
 /* Footer */
