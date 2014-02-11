@@ -2,11 +2,18 @@ $(document).ready(function() {
 	(function time() {
 		var d = new Date();
 		var n = d.getHours();
-		if (n > 18 && n <= 4) { 	
+		if (n < 5 || n > 18) { 	
 			$('.head').addClass('evening');
-		 } else if (n > 4 && n < 12) {
+			$('.headtext').text("Good evening, I'm David Saunders.");
+		 } 
+		 else if (n > 4 && n < 12) {
 			$('.head').addClass('morning');
-		 } else {
+			$('header h1, .nav li').css('color', '#800000');
+			$('.headtext').text("Good morning, I'm David Saunders.");
+		 } 
+		 else {
 			$('.head').addClass('afternoon');
+			$('header h1, .nav li').css('color', 'black');
+			$('.headtext').text("Good afternoon, I'm David Saunders.");
 	}})()
 }); //ready
