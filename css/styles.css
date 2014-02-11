@@ -114,6 +114,10 @@ li a {
 	text-align: center;
 }
 
+#about p {
+	text-align: justify;
+}
+
 .skills {
 	margin-top: 2.5em;
 	text-align: left;
@@ -145,6 +149,14 @@ li a {
 
 .logos li {
 	margin: .7459345%;
+}
+
+.github {
+	background: transparent url('../img/logos/github.png') no-repeat center;
+}
+
+.codepen {
+	background: transparent url('../img/logos/codepen.png') no-repeat center;
 }
 
 .facebook {
