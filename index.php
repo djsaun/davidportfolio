@@ -16,6 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -103,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 						<li><a  href="http://open.spotify.com/user/djsaun" class="icon spotify" target="_blank" title="Spotify" width="54px" height="54px"></a></li>
 				</ul>
 				<?php if(isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?> 
-				<p class="thanks">Thanks for the email! <br/><br/>I&rsquo;ll be in touch shortly.</p>
+				<p class="thanks">Thanks for the email! <br/><br/> I&rsquo;ll be in touch shortly.</p>
 				<?php } else { ?>
 				<form action="#" method="POST" name="contact_form" id="contactform">
 					<fieldset>
