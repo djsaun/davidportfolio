@@ -49,10 +49,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<section>
 			<nav class="container">
 				<ul class="nav">
-					<a href="#about"><li>About</li></a>
-					<a href="#work"><li>Work</li></a>
-					<a href="#contact"><li>Contact</li></a>
-					<a href="#"><li>Blog</li></a>
+					<li><a href="#about">About</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#">Blog</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -83,11 +83,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<div id="work">
 				<h3>Work</h3>
 					<div class="samples">
-						<li class="thumbnail"></li>
-						<li class="thumbnail"></li>
-						<li class="thumbnail"></li>
-						<li class="thumbnail"></li>
-						<li class="thumbnail"></li>
+						<ul>
+							<li class="thumbnail"></li>
+							<li class="thumbnail"></li>
+							<li class="thumbnail"></li>
+							<li class="thumbnail"></li>
+							<li class="thumbnail"></li>
+						</ul>
 					</div>
 			</div>
 		</article>
@@ -96,12 +98,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				<h3>Contact</h3>
 				<p>Get In Touch</p>
 				<ul class="logos">
-						<li><a href="https://github.com/djsaun" class="icon github" target="_blank" title="Github" width="54px" height="54px"></a></li>
-						<li><a href="https://www.codepen.io/djsaun" class="icon codepen" target="_blank" title="Codepen" width="54px" height="54px"></a></li>
-						<li><a href="https://www.facebook.com/dsaunders1000010101010101" class="icon facebook" target="_blank" title="Facebook" width="54px" height="54px"></a></li>
-						<li><a href="http://www.linkedin.com/profile/view?id=95648542" class="icon linkedin" target="_blank" title="LinkedIn" width="54px" height="54px"></a></li>
-<!-- 					<li><a href="https://plus.google.com/+DavidSaunders010100011" class="icon google" target="_blank" title="Google +" width="54px" height="54px"></a></li> -->
-						<li><a  href="http://open.spotify.com/user/djsaun" class="icon spotify" target="_blank" title="Spotify" width="54px" height="54px"></a></li>
+						<li><a href="https://github.com/djsaun" class="icon github" target="_blank" title="Github"></a></li>
+						<li><a href="https://www.codepen.io/djsaun" class="icon codepen" target="_blank" title="Codepen"></a></li>
+						<li><a href="https://www.facebook.com/dsaunders1000010101010101" class="icon facebook" target="_blank" title="Facebook"></a></li>
+						<li><a href="http://www.linkedin.com/profile/view?id=95648542" class="icon linkedin" target="_blank" title="LinkedIn"></a></li>
+<!-- 					<li><a href="https://plus.google.com/+DavidSaunders010100011" class="icon google" target="_blank" title="Google +"></a></li> -->
+						<li><a  href="http://open.spotify.com/user/djsaun" class="icon spotify" target="_blank" title="Spotify"></a></li>
 				</ul>
 				<?php if(isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?> 
 				<p class="thanks">Thanks for the email! <br/><br/> I&rsquo;ll be in touch shortly.</p>
@@ -109,15 +111,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				<form action="#" method="POST" name="contact_form" id="contactform">
 					<fieldset>
 						<div class="name">
-							<label for="Name">Name *</label>
-							<input type="text" name="name" id="name" pattern="[a-zA-Z ]+" required></input>
+							<label for="name">Name *</label>
+							<input type="text" name="name" id="name" pattern="[a-zA-Z ]+" required>
 						</div>
 						<div class="email">
-							<label for="Email">Email *</label>
-							<input type="email" Name="email" id="email" required></input>
+							<label for="email">Email *</label>
+							<input type="email" Name="email" id="email" required>
 						</div>
 						<div class="message">
-							<label for="Message">Message</label>
+							<label for="message">Message</label>
 							<textarea name="message" id="message" rows="4" cols="50"></textarea>
 						</div>
 						<div class="submitbtn">
@@ -131,8 +133,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<footer class="footer">
 			<p>&copy;<?php echo date('Y'); ?> David Saunders. All Rights Reserved.</p>
 		</footer>
-
-		</article>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>		
 <script src="js/contact.js"></script>
 <script src="js/timeofday.js"></script>
