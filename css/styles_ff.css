@@ -14,10 +14,6 @@ body {
 	background: #FEFBFD;
 }
 
-.nav,.logos,.samples,form {
-	text-align: center;
-}
-
 /* Global */
 h1 {
 	font-family: 'Exo 2', sans-serif;
@@ -153,8 +149,9 @@ li {
 }*/
 
 /* Work */
+
 #work {
-	margin-top: 4em;
+	width: 100%;
 }
 
 .thumbnail {
@@ -162,12 +159,13 @@ li {
 	padding: 4em;
 	border: 2px solid black;
 	width: 4em;
-	display: inline;
 }
 
 /* Contact */
 #contact {
 	display: block;
+	float: justify;
+	clear: both;
 }
 
 #contact p {
@@ -179,6 +177,10 @@ li {
 	height: 54px;
 	display: block;
 	margin: 0 auto;
+}
+
+.logos {
+	text-align: center;
 }
 
 .logos li {
