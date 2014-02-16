@@ -33,8 +33,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!-- Styles --> 
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/styles_ff.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/flexbox.css" type="text/css" media="screen">
+	
 
 
 <!-- End styles -->
@@ -42,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 	<div class="head">
-		<header>
+		<header class="container">
 			<h1 class="headtext">Hello, I'm David Saunders.</h1>
 			<h2>I'm a <span>front-end developer</span>.</h2>
 		</header>

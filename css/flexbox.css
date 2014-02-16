@@ -1,21 +1,34 @@
-.nav, .logos, .samples, form{ 
+.nav,.logos,.samples,form {
 	display: -webkit-flex;
 	-webkit-justify-content: center;
 	-webkit-flex-wrap: wrap;
-	}
+}
 
 #about {
 	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+
 	-webkit-column-gap: 1em;
+	-moz-column-gap: 1em;
+	column-gap: 1em;
 }
 
 .thumbnails {
 	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+
 	-webkit-column-gap: 1em;
+	-moz-column-gap: 1em;
+	column-gap: 1em;
+
 	-webkit-column-width: 45%;
+	-moz-column-width: 45%;
+	column-width: 45%;
 }
 
-h3, .skills {
+h3,.skills {
 	-webkit-column-span: all;
 }
 

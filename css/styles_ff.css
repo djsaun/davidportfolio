@@ -14,6 +14,10 @@ body {
 	background: #FEFBFD;
 }
 
+.nav,.logos,.samples,form {
+	text-align: center;
+}
+
 /* Global */
 h1 {
 	font-family: 'Exo 2', sans-serif;
@@ -49,11 +53,13 @@ ul {
 
 li {
 	list-style-type: none;
-	display: block;
+	display: inline-block;
+	max-width: 100%;
 }
 
-li a {
+.nav li a {
 	text-decoration: none;
+	float: justify;
 }
 
 /* header */
@@ -103,8 +109,10 @@ li a {
 }
 
 /* Navigation */
+
 .nav {
-	margin: 2em;
+	text-align: center;
+	margin: -1em;
 }
 
 .nav a {
@@ -114,6 +122,7 @@ li a {
 	border-radius: 30%;
 	color: #FFEBCD;
 	text-decoration: none;
+	float: left;
 }
 
 /* About */
@@ -138,10 +147,10 @@ li a {
 	font-size: 1.2em;
 }
 
-.skills {
+/*.skills {
 	margin-top: 2.5em;
 	text-align: left;
-}
+}*/
 
 /* Work */
 #work {
@@ -152,10 +161,15 @@ li a {
 	margin: 1.3em;
 	padding: 4em;
 	border: 2px solid black;
-	float: left;
+	width: 4em;
+	display: inline;
 }
 
 /* Contact */
+#contact {
+	display: block;
+}
+
 #contact p {
 	text-align: center;
 }
@@ -163,11 +177,14 @@ li a {
 .icon {
 	width: 54px;
 	height: 54px;
-/*	display: block;*/
+	display: block;
+	margin: 0 auto;
 }
 
 .logos li {
 	margin: .7459345%;
+	float: justify;
+	clear: both;
 }
 
 .github {
@@ -195,11 +212,12 @@ li a {
 }
 
 a[href^="http://"]:hover,a[href^="https://"]:hover {
-	border: 5px dashed white;
+	border: 5px dashed #FFFFFF;
 	border-radius: 50px;
 }
 
 fieldset {
+	margin: 0 auto;
 	width: 60%;
 	text-align: center;
 }
