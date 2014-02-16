@@ -27,7 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<title>David Saunders | Portfolio</title>
 	<meta name="description" content="David Saunders is a web developer living in Austin, TX.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
-	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen">
 	<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
