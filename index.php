@@ -1,8 +1,30 @@
 <?php 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	$name = $_POST["name"];
-	$email = $_POST["email"];
-	$message = $_POST["message"];
+	$name = trim($_POST["name"]);
+	$email = trim($_POST["email"]);
+	$message = trim($_POST["message"]);
+
+	if ($name == "" OR $email == "") {
+		echo "You must specify a value for name and email address.";
+		exit;
+	}
+
+	// Checks for malicious values
+
+	foreach ( $_POST as $value){
+		if (stripos($value, 'Content-Type:') !== FALSE) {
+			echo "There was a problem with the information you entered.";
+			exit;
+		}
+	}
+
+	if ($_POST["address"] != "") {
+		echo "Your form submission has an error.";
+		exit;
+	}
+
+
+
 	$email_body = "";
 	$email_body = $email_body . "Name: " . $name . "\n";
 	$email_body = $email_body . "Email: " . $email . "\n";
@@ -121,6 +143,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 						<div class="message">
 							<label for="message">Message</label>
 							<textarea name="message" id="message" rows="4" cols="50"></textarea>
+						</div>
+						<div class="address" style="display: none;">
+							<label for="address">Address</label>
+							<input type="text" Name="address" id="address">
+							<p>Please ignore this field.</p>
 						</div>
 						<div class="submitbtn">
 							<input type="submit" value="Submit">
