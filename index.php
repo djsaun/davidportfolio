@@ -36,12 +36,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 	$email_body = "";
-	$email_body = $email_body . "Name: " . $name . "\n";
-	$email_body = $email_body . "Email: " . $email . "\n";
+	$email_body = $email_body . "Name: " . $name . "<br>";
+	$email_body = $email_body . "Email: " . $email . "<br>";
 	$email_body = $email_body . "Message: " . $message;
 	// echo $email_body;
 
-	// TODO: Send Email
+	$mail->setFrom($email, $name);
+	$address = "djsaun@gmail.com";
+	$mail->addAddress($address, 'David Saunders');
+	$mail->Subject = "David Saunders' Portfolio Contact Form Submission | " . $name;
+	$mail->msgHTML($email_body);
+
+	if (!$mail->send()) {
+	    echo "There was a problem sending the email: " . $mail->ErrorInfo;
+	    exit;
+	}
 
 	header("Location: index.php?status=thanks"); //redirects to page after email is sent
 	exit; //immediately stops anymore php code in browser from running
